@@ -26,7 +26,7 @@ most articles refused my scraping attempts unfortunately. Yeah, I can use seleni
 The Google custom search engine python REST API is a relief it made it all simple to get every piece of the data I want, and it made all the articles exposed and with a quality reference two!
 https://cse.google.com/cse/all
 https://medium.com/@hemantjain1999/implementing-web-scraping-in-python-with-beautifulsoup-and-google-api-34c7282b9257
-check:              for more info 
+check my notebook:   https://github.com/ZA3karia/course-articles-videos-recomendation/blob/master/courses%26articles_recommendation.ipy           for more info 
 
 # What’s now??
 ## the easy way....
@@ -40,18 +40,22 @@ The fact that the second one is a beautiful concept we will do it ;)
 ## newspaper3k again
 In fact, we don’t have to the machine is the one that needs to understand, and we again have the choice either use state-of-the-art algorithms or use an easy framework that doesn’t just give good result but also do the scraping for you (aka: newspaper3k)
 for more info check the readme file: 
+newspaper3k test: https://github.com/ZA3karia/course-articles-videos-recomendation/blob/master/test_newspaper3k.ipynb
+generatino of article data: https://github.com/ZA3karia/course-articles-videos-recomendation/blob/master/Generating_article_data.ipynb
 After that we will have got a good dataset representation of our articles, make in consideration I’ve used a lot of data that It would have been better to know exactly what feature matters, or take it all and apply dimensional reduction, (spoilers: I didn’t, but I will hopefully in the future), now that we got the articles data. We need the target to train the model, unfortunately this data can’t be scrapped NOR predict, because we need to make it relevant to the user, but we can start to be random in the beginning and it will learn as it goes ;)
 therefore, I made a Dummy data using Pandas & NumPy you can check the notebook to know how I've done it:
+https://github.com/ZA3karia/course-articles-videos-recomendation/blob/master/fake_data_generation.ipynb
 
 # NN or Classic
 Its basically a good choice to use a normal classifier and us
 Then I merged the data, I used the Cartesian product then transformed it into a TensorFlow dataset, it would have been better if I 
 used Matrices Factorization, but that is for another day.
 I then trained a Simple NN using TensorFlow & Keras to recognize the patterns in my data, check my notebook: 
-
+https://github.com/ZA3karia/course-articles-videos-recomendation/blob/master/data_preprocessing%26model_testing.ipynb
 After that you can feed it to your website get the user experience feedback and make your model converge better for every person
+# My final architecture
 
-
+https://github.com/ZA3karia/course-articles-videos-recomendation/blob/master/shema%20final.PNG
 
 
 
